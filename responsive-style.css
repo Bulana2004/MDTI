@@ -1,0 +1,41 @@
+@media (max-width: 987px) {
+    #header-info {
+        display: none;
+    }
+
+    .googlemap {
+        width: 100%;
+    }
+}
+
+@media (min-width:986px) {
+    #corousel-margin {
+        margin: 2%;
+    }
+}
+
+@media (max-width: 764px) {
+    .footer-image {
+        margin-bottom: 50px;
+    }
+
+    .inline-block {
+        margin-inline: 30px;
+    }
+
+    .googlemap {
+        width: 100%;
+    }
+}
+
+/*Mobile responsive*/
+@media (min-width: 573px) {
+    #footer-hr {
+        display: none;
+    }
+
+    .googlemap {
+        width: 100%;
+    }
+
+}
