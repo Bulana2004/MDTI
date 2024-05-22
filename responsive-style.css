@@ -28,7 +28,6 @@
     }
 }
 
-/*Mobile responsive*/
 @media (min-width: 573px) {
     #footer-hr {
         display: none;
