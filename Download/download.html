@@ -112,10 +112,80 @@
     <!--====Navbar-end====-->
     <!--============================================================================================-->
     <div class="container">
-        <h1 class="text-center mt-5">Downloads</h1>
+        <h1 class="text-center mt-5 mb-4">Download</h1>
 
     </div>
-    <br><br><br><br>
+
+    <!--====Accordian====-->
+    <div class="container">
+        <div class="accordion accordion-flush mb-5" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed border rounded-3 border-dark" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                        aria-controls="flush-collapseOne">
+                        Example Date (2023 January)
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <table class="table table-striped table-bordered">
+                            <thead class="text-center">
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Name</th>
+                                    <th>Download</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center">
+                                <tr>
+                                    <td>2024-01-22</td>
+                                    <td>Gazzet</td>
+                                    <td><a href="pdf/JavaScript Arrays.pdf" target="_blank">Download here</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the
+                        <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
+                        this
+                        being filled with some actual content.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
+                        the
+                        <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
+                        exciting
+                        happening here in terms of content, but just filling up the space to make it look, at least at
+                        first
+                        glance, a bit more representative of how this would look in a real-world application.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====According end====-->
     <!--============================================================================================-->
     <!--====Footer-start====-->
     <footer class="text-center text-lg-start text-white" style="background-color: rgb(39, 39, 39)">
@@ -123,24 +193,17 @@
         <div class="container p-4 pb-0">
             <!-- Section: Links -->
             <section class="">
-                <!--Grid row-->
                 <div class="row">
-                    <!-- Grid column -->
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                        <!--
+                            <h6 class="text-uppercase mb-4 font-weight-bold">
                             MDTI <span style="font-size: 10px;">SP</span>
-                        </h6>
-                        <p>
-                            Here you can use rows and columns to organize your footer
-                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.
-                        </p>
+                            </h6>
+                        -->
+                        <img src="\img\WhatsApp Image 2024-05-20 at 16.13.03_b925d1cc.jpg" alt="" width="200px"
+                            class="rounded-3">
                     </div>
-                    <!-- Grid column -->
-
                     <hr class="w-100 clearfix d-md-none" />
-
-                    <!-- Grid column -->
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold">Site map</h6>
                         <p>
@@ -153,25 +216,13 @@
                                     class="bi bi-chevron-compact-right"></i> Events</a>
                         </p>
                     </div>
-
-                    <!-- Grid column -->
-
                     <hr class="w-100 clearfix d-md-none" />
-
-                    <!-- Grid column -->
-                    <hr class="w-100 clearfix d-md-none" />
-
-                    <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
                         <p><i class="bi bi-geo-alt-fill"></i> Ginthota Wakwella Road, Wakwella, Galle</p>
                         <p><i class="bi bi-envelope-fill"></i> info@gmail.com</p>
                         <p><i class="bi bi-telephone-fill"></i> + 91 122 467 16</p>
                     </div>
-
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
 
@@ -184,7 +235,6 @@
                                 class="bi bi-youtube"></i></a>
                     </div>
                 </div>
-                <!--Grid row-->
             </section>
             <!-- Section: Links -->
         </div>
@@ -200,7 +250,6 @@
         </div>
         <!-- Copyright -->
     </footer>
-    </div>
     <!--====Footer-End====-->
 </body>
 
