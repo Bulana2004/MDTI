@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive-style.css">
     <link rel="stylesheet" href="animated.css">
+    <link rel="stylesheet" href="assets/aos-master/dist/aos.css">
     <!--====Bootstrap Icons====-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--====Google Fonts====-->
@@ -78,7 +79,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav  nav-underline text-center">
+                <ul class="navbar-nav nav-underline text-center">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -115,7 +116,7 @@
 
     <!--====Carousel-Start====-->
     <div id="corousel-margin">
-        <div id="carouselExampleCaptions" class="carousel slide">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <!--=====Carousel Items====-->
                 <div class="carousel-item active">
@@ -147,12 +148,12 @@
                 </div>
             </div>
             <!--====Carousel Items End====-->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -163,7 +164,16 @@
     <!--============================================================================================-->
 
 
-
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="img/banner 1.png" width="100%" alt="" data-aos="fade-right" data-aos-duration="1500">
+            </div>
+            <div class="col-sm-6">
+                <img src="img/banner 1.png" width="100%" alt="" data-aos="fade-left" data-aos-duration="1500">
+            </div>
+        </div>
+    </div>
 
 
 
@@ -238,31 +248,10 @@
 <!--=====Js files====-->
 <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/jquery.min.js"></script>
+<script src="assets/aos-master/dist/aos.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const element = document.querySelector('.tilt-in-element');
-
-        function isElementInViewport(el) {
-            const rect = el.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-
-        function onScroll() {
-            if (isElementInViewport(element)) {
-                element.classList.add('tilt-in-left-1');
-                window.removeEventListener('scroll', onScroll); // Remove the event listener after adding the class
-            }
-        }
-
-        window.addEventListener('scroll', onScroll);
-        onScroll(); // Trigger the function on load in case the element is already in the viewport
-    });
-
+    AOS.init()
 </script>
+
 
 </html>
