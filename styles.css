@@ -1,5 +1,7 @@
-body {
-    font-family: "Open Sans", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    font-family: "Nunito Sans", sans-serif;
 }
 
 .header_color {
@@ -16,4 +18,53 @@ body {
 .navbar_bg {
     background-color: rgb(235, 238, 240);
     color: black;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.carousel-caption h5 {
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.slider-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust as needed */
+}
+
+.slider-button {
+    background-color: rgba(55, 154, 193,0.9); 
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 13px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.slider-button:hover {
+    background-color: rgba(33, 117, 148, 0.9);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.slider-button:active {
+    background-color: #30009c; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
 }
