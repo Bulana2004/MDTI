@@ -8,13 +8,6 @@
     }
 }
 
-@media only screen and (min-width: 985px) {
-
-    #corousel-margin {
-        margin: 2%;
-    }
-}
-
 @media only screen and (max-width: 764px) {
     .footer-image {
         margin-bottom: 50px;
@@ -60,15 +53,15 @@
 
 @media (max-width: 576px) {
     .carousel-caption {
-        bottom: 5%;
+        bottom: 8%;
     }
 
     .carousel-caption h5 {
-        font-size: 1.2rem;
+        font-size: 13px;
     }
 
     .carousel-caption button {
-        font-size: 0.75rem;
+        font-size: 10px;
         padding: 0.25rem 0.5rem;
     }
 }
