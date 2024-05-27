@@ -70,6 +70,7 @@
     transform: translateY(2px);
 }
 
+/*AboutUs Banner CSS*/
 .banner {
     position: relative;
     width: 100%;
@@ -85,7 +86,6 @@
 }
 
 .banner-content {
-    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
     padding: 20px;
     border-radius: 10px;
 }
@@ -93,9 +93,7 @@
 .banner h1 {
     margin: 0;
     font-size: 2.5em;
+    text-shadow: 3px 3px 5px black;
 }
 
-.banner p {
-    margin: 10px 0 0;
-    font-size: 1.2em;
-}
+/*End of AboutUs Banner CSS*/
