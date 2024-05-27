@@ -1,97 +1,102 @@
 /*===For All pages===*/
 @media only screen and (max-width: 985px) {
-    #header-info {
-        display: none;
-    }
+  #header-info {
+    display: none;
+  }
 
-    .googlemap {
-        width: 100%;
-    }
+  .googlemap {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 764px) {
-    .footer-image {
-        margin-bottom: 50px;
-    }
+  .footer-image {
+    margin-bottom: 50px;
+  }
 
-    .inline-block {
-        margin-inline: 30px;
-    }
+  .inline-block {
+    margin-inline: 30px;
+  }
 
-    .googlemap {
-        width: 100%;
-    }
+  .googlemap {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 573px) {
-    #footer-hr {
-        display: none;
-    }
+  #footer-hr {
+    display: none;
+  }
 
-    .googlemap {
-        width: 100%;
-    }
-
+  .googlemap {
+    width: 100%;
+  }
 }
 
 /*========================
  Carousel caption mobile responsive
 =========================*/
 @media (max-width: 768px) {
-    .carousel-caption {
-        bottom: 10%;
-    }
+  .carousel-caption {
+    bottom: 10%;
+  }
 
-    .carousel-caption h5 {
-        font-size: 1.5rem;
-    }
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
 
-    .carousel-caption button {
-        font-size: 0.875rem;
-        padding: 0.5rem 0.75rem;
-    }
+  .carousel-caption button {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+  }
 }
 
 @media (max-width: 576px) {
-    .carousel-caption {
-        bottom: 8%;
-    }
+  .carousel-caption {
+    bottom: 8%;
+  }
 
-    .carousel-caption h5 {
-        font-size: 13px;
-    }
+  .carousel-caption h5 {
+    font-size: 13px;
+  }
 
-    .carousel-caption button {
-        font-size: 10px;
-        padding: 0.25rem 0.5rem;
-    }
+  .carousel-caption button {
+    font-size: 10px;
+    padding: 0.25rem 0.5rem;
+  }
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .banner {
-        height: 40vh;
-    }
-    
-    .banner h1 {
-        font-size: 2em;
-    }
-    
-    .banner p {
-        font-size: 1em;
-    }
+  .banner {
+    height: 40vh;
+  }
+
+  .banner h1 {
+    font-size: 2em;
+  }
+
+  .banner p {
+    font-size: 1em;
+  }
 }
 
 @media (max-width: 480px) {
-    .banner {
-        height: 30vh;
-    }
-    
-    .banner h1 {
-        font-size: 1.5em;
-    }
-    
-    .banner p {
-        font-size: 0.9em;
-    }
+  .banner {
+    height: 30vh;
+  }
+
+  .banner h1 {
+    font-size: 1.5em;
+  }
+
+  .banner p {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 993px) {
+  .vision-margin {
+    padding-bottom: 13%;
+  }
 }
