@@ -97,3 +97,25 @@
 }
 
 /*End of AboutUs Banner CSS*/
+
+/*Gallery Start*/
+<!--container-->
+#con{
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto ;
+    display: flex ;
+    flex-direction: row ;
+    justify-content: center;
+}
+
+.box {
+    width: 250px ;
+    margin: 0 10px ;
+    box-shadow: 0 0 20px 2 px rgba(118, 13, 13, 0.1);
+}
+
+.box image{
+    
+}
+/*Gallery End*/
