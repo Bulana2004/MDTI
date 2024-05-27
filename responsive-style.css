@@ -66,3 +66,32 @@
         padding: 0.25rem 0.5rem;
     }
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .banner {
+        height: 40vh;
+    }
+    
+    .banner h1 {
+        font-size: 2em;
+    }
+    
+    .banner p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 30vh;
+    }
+    
+    .banner h1 {
+        font-size: 1.5em;
+    }
+    
+    .banner p {
+        font-size: 0.9em;
+    }
+}
