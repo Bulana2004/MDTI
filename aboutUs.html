@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="responsive-style.css" />
     <link rel="stylesheet" href="animated.css" />
     <link rel="stylesheet" href="assets/aos-master/dist/aos.css" />
+    <link rel="stylesheet" href="counter/nicepage.css" media="screen">
+    <link rel="stylesheet" href="counter/Page-1.css" media="screen">
     <!--====Bootstrap Icons====-->
     <link
       rel="stylesheet"
@@ -39,153 +41,130 @@
 
   <body>
     <!--====Header====-->
-    <div class="header_color">
-      <div class="header_fonts mx-2 text-end" id="header-info">
-        <a href=""><span class="bi bi-person-fill"> 0912246716 |</span></a>
-        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"
-          ><span class="bi bi-geo-alt-fill">
-            Ginthota Wakwella Road, Wakwella</span
-          ></a
-        >
-      </div>
+  <div class="header_color">
+    <div class="header_fonts mx-2 text-end" id="header-info">
+      <a href=""><span class="bi bi-person-fill"> 0912246716 |</span></a>
+      <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="bi bi-geo-alt-fill">
+          Ginthota Wakwella Road, Wakwella</span></a>
+    </div>
 
-      <!--====Modal-start====-->
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">
-                Management Development and Training Institute Southern Province
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div
-                style="
+    <!--====Modal-start====-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">
+              Management Development and Training Institute Southern Province
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div style="
                   position: relative;
                   padding-bottom: 56.25%;
                   height: 0;
                   overflow: hidden;
                   max-width: 100%;
-                "
-              >
-                <!--====Google Map====-->
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.291595461753!2d80.18964487320969!3d6.0913653280378695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae17133c016606f%3A0x4223cf95a74ed8ef!2sManagement%20Development%20and%20Training%20Institute%20Southern%20Province!5e0!3m2!1sen!2slk!4v1716257445174!5m2!1sen!2slk"
-                  width="100%"
-                  height="100%"
-                  style="position: absolute; top: 0; left: 0; border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-                <!--====Googlemap-End====-->
-              </div>
+                ">
+              <!--====Google Map====-->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.291595461753!2d80.18964487320969!3d6.0913653280378695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae17133c016606f%3A0x4223cf95a74ed8ef!2sManagement%20Development%20and%20Training%20Institute%20Southern%20Province!5e0!3m2!1sen!2slk!4v1716257445174!5m2!1sen!2slk"
+                width="100%" height="100%" style="position: absolute; top: 0; left: 0; border: 0" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <!--====Googlemap-End====-->
             </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
           </div>
         </div>
       </div>
-      <!--====Modal-End====-->
     </div>
-    <!--====Header-end====-->
+    <!--====Modal-End====-->
+  </div>
+  <!--====Header-end====-->
 
-    <!--====Navbar-start====-->
-    <nav class="navbar navbar-expand-lg navbar_bg sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="img/logo.png" alt="..." width="150px" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav nav-underline text-center">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="event.html">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Courses</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Research</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="download.html">Download</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link active dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                About Us
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="aboutUs.html">About Us</a>
-                </li>
-                <li><a class="dropdown-item" href="staff.html">Staff</a></li>
-                <li>
-                  <a class="dropdown-item disabled" href="team.html">Team</a>
-                </li>
-                <li>
-                  <a class="dropdown-item disabled" href="history.html"
-                    >History</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Log in</a>
-            </li>
-          </ul>
-        </div>
+  <!--====Navbar-start====-->
+  <nav class="navbar navbar-expand-lg navbar_bg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="..." width="150px" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav nav-underline text-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html" style="font-size: 17px;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="event.html" style="font-size: 17px;">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="" style="font-size: 17px;">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="font-size: 17px;">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="download.html" style="font-size: 17px;">Download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html" style="font-size: 17px;">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="font-size: 17px;">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle active"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="font-size: 17px;"
+            >
+              About Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item active" href="aboutUs.html" style="font-size: 17px;">About Us</a>
+              </li>
+              <li><a class="dropdown-item" href="staff.html" style="font-size: 17px;">Staff</a></li>
+              <li>
+                <a class="dropdown-item disabled" href="team.html" style="font-size: 17px;">Team</a>
+              </li>
+              <li>
+                <a class="dropdown-item disabled" href="history.html" style="font-size: 17px;"
+                  >History</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true" style="font-size: 17px;">Log in</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!--====Navbar-end====-->
+    </div>
+  </nav>
+
+  <!--====Navbar-end====-->
 
     <!--============================================================================================-->
 
