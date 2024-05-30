@@ -345,5 +345,32 @@
   }
 }
 
+<<<<<<< Updated upstream
 
 
+=======
+/*Card in about us*/
+.card-icon{
+  margin: 0 1em;
+}
+
+.card-icon i {
+  font-size: 3em;
+}
+
+.vm-card{
+  background-color: teal;
+  color: #fff;
+  padding: 3em 0;
+  border: 0;
+  border-radius: 4em 0;
+  background: linear-gradient(to left ,teal 50%,black 50%);
+  background-size: 200%;
+  background-position: right;
+  transition: background-position 0.5s ease;
+}
+
+.vm-card:hover{
+  background-position: left;
+}
+>>>>>>> Stashed changes
