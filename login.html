@@ -1,65 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!--====Meta tags====-->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--====Title====-->
-  <title>MDTI SP</title>
-  <!--====Fav icon====-->
-  <link rel="icon" href="img/favicon-32x32.png" sizes="32x32" type="image/png" />
-  <!--====Css link====-->
-  <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="responsive-style.css" />
-  <link rel="stylesheet" href="animated.css" />
-  <link rel="stylesheet" href="assets/aos-master/dist/aos.css" />
-  <link rel="stylesheet" href="counter/nicepage.css" />
-  <link rel="stylesheet" href="counter/Page-1.css" />
-  <!--====Bootstrap Icons====-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <!--====Google Fonts====-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDTI SP</title>
 
-    <style>
-      .banner {
-        position: relative;
-        width: 100%;
-        height: 30vh;
-        background-color: rgb(55, 154, 193);
-        background-size: cover;
-        background-position: 69%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        text-align: center;
-        text-transform: uppercase;
-      }
-  
-      .banner-content {
-        padding: 20px;
-        border-radius: 10px;
-      }
-  
-      .banner h1 {
-        margin: 0;
-        font-size: 2.5em;
-        text-shadow: 3px 3px 5px black;
-      }
-    </style>
-  <!--===================================================
-    Devolped by=Collage of Technology Galle (Batch 03)
-    =======================================================-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive-style.css" />
+    <link rel="stylesheet" href="animated.css" />
+    <!-- AOS Library CSS -->
+    <link rel="stylesheet" href="assets/aos-master/dist/aos.css" />
+    <!-- Counter CSS -->
+    <link rel="stylesheet" href="counter/nicepage.css" />
+    <link rel="stylesheet" href="counter/Page-1.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+    
+    <!--=========== external link for contact us fb, twitter icons ===========-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
-
 <body>
-  <!--====Header====-->
+
+    <!--====Header====-->
   <div class="header_color">
     <div class="header_fonts mx-2 text-end" id="header-info">
       <a href=""><span class="bi bi-person-fill"> 0912246716 |</span></a>
@@ -130,7 +102,7 @@
             <a class="nav-link" href="download.html" style="font-size: 15px">Download</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="gallery.html" style="font-size: 15px">Gallery</a>
+            <a class="nav-link " href="gallery.html" style="font-size: 15px">Gallery</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html" style="font-size: 15px">Contact Us</a>
@@ -151,7 +123,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="login.html" style="font-size: 15px">Log in</a>
+            <a class="nav-link active" href="login.html" style="font-size: 15px">Log in</a>
           </li>
         </ul>
       </div>
@@ -159,96 +131,76 @@
   </nav>
   <!--====Navbar-end====-->
 
-  <div class="banner">
-    <div class="banner-content">
-      <h1>gallery</h1>
+  <!--======= form ==================-->
+
+    <section class="vh-100">
+  <div class="container-fluid mt-5 h-custom mb-5">
+    <div class="row d-flex justify-content-center align-items-center h-100 ">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+          class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <form>
+          <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+            <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+            <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-floating mx-1">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+
+            <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-floating mx-1">
+              <i class="fab fa-twitter"></i>
+            </button>
+
+            <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-floating mx-1">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
+          </div>
+
+          <div class="divider d-flex align-items-center my-4">
+            <p class="text-center fw-bold mx-3 mb-0">Or</p>
+          </div>
+
+          <!-- Email input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <input type="email" id="form3Example3" class="form-control form-control-lg"
+              placeholder="Enter a valid email address" />
+            <label class="form-label" for="form3Example3">Email address</label>
+          </div>
+
+          <!-- Password input -->
+          <div data-mdb-input-init class="form-outline mb-3">
+            <input type="password" id="form3Example4" class="form-control form-control-lg"
+              placeholder="Enter password" />
+            <label class="form-label" for="form3Example4">Password</label>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <!-- Checkbox -->
+            <div class="form-check mb-0">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+              <label class="form-check-label" for="form2Example3">
+                Remember me
+              </label>
+            </div>
+            <a href="#!" class="text-body">Forgot password?</a>
+          </div>
+
+          <div class="text-center text-lg-start mt-4 mb-3">
+            <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
+                class="link-danger">Register</a></p>
+          </div>
+
+        </form>
+      </div>
     </div>
   </div>
-
-  <!--================== GALLERY =================-->
-
-  <section class="bg-light py-4 my-5">
-    <div class="container">
-        <div class="row">
-            
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card my-3">
-                    <img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" 
-                    class="card-image-top " alt="thumbnail">
-
-                    <div class="card-body">
-                        <h3 class="card-title"><a href="#" class="text-secondary">What is HTML</a></h3>
-                        <p class="card-text">HTML stands for Hyper Text Markup Language, It helps to learn web development and designing. </p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card my-3">
-
-                    <img src="https://images.pexels.com/photos/3848158/pexels-photo-3848158.jpeg" class="card-image-top" alt="thumbnail">
-
-                    <div class="card-body">
-                        <h3 class="card-title"><a href="#" class="text-secondary">Why We Use HTML</a></h3>
-                        <p class="card-text">We use HTML to make website and that website helps to gain very much knowledge.Pellentesque dictum consequat tincidunt. Sed tincidunt tortor nec vulputate gravida.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card my-3">
-
-                    <img src="https://images.pexels.com/photos/2343170/pexels-photo-2343170.jpeg" class="card-image-top" alt="thumbnail">
-                    <div class="card-body">
-                        <h3 class="card-title"><a href="#" class="text-secondary">Where do people came from?</a></h3>
-                        <p class="card-text">Pellentesque dictum consequat tincidunt. Sed tincidunt tortor nec vulputate gravida. Nam sapien nisi, malesuada at sapien suscipit,</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card my-3">
-                    <img src="https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg" class="card-image-top" alt="thumbnail">
-                    <div class="card-body">
-                        <h3 class="card-title"><a href="#" class="text-secondary">What is Lorem Ipsum?</a></h3>
-                        <p class="card-text">Pellentesque dictum consequat tincidunt. Sed tincidunt tortor nec vulputate gravida. Nam sapien nisi, malesuada at sapien suscipit.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card my-3">
-
-                    <img src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg" class="card-image-top" alt="thumbnail">
-                    <div class="card-body">
-                        <h3 class="card-title"><a href="#" class="text-secondary">Where is my Pasta?</a></h3>
-                        <p class="card-text">Pellentesque dictum consequat tincidunt. Sed tincidunt tortor nec vulputate gravida. Nam sapien nisi, malesuada at sapien suscipit,</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-                <div class="card my-3">
-
-                    <img src="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg" class="card-image-top" alt="thumbnail">
-
-                    <div class="card-body">
-                        <h3 class="card-title"><a href="#" class="text-secondary">Why is sky blue ?</a></h3>
-                        <p class="card-text">Pellentesque dictum consequat tincidunt. Sed tincidunt tortor nec vulputate gravida. Nam sapien nisi, malesuada at sapien suscipit.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  
 </section>
-  <!--====Footer-start====-->
+    
+    <!--====Footer-start====-->
   <footer class="text-center text-lg-start text-white" style="background-color: rgb(39, 39, 39)">
     <!-- Grid container -->
     <div class="container p-4 pb-0 r">
@@ -325,13 +277,4 @@
   </footer>
   <!--====Footer-End====-->
 </body>
-
-<!--=====Js files====-->
-<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/aos-master/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-
 </html>
