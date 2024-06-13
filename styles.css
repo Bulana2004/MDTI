@@ -33,7 +33,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align:center;
+  text-align: center;
 }
 
 .carousel-caption p {
@@ -290,38 +290,38 @@
 /* login css */
 .divider:after,
 .divider:before {
-content: "";
-flex: 1;
-height: 1px;
-background: #eee;
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
 }
 .h-custom {
-height: calc(100% - 73px);
+  height: calc(100% - 73px);
 }
 @media (max-width: 450px) {
-.h-custom {
-height: 100%;
-}
+  .h-custom {
+    height: 100%;
+  }
 }
 
 /* gallery css */
 
 .card-img-top {
-    max-height: 250px;
-    overflow: hidden;
+  max-height: 250px;
+  overflow: hidden;
 }
 
 .card-title a:link {
-    font-size: 30px;
-    background-color: transparent;
-    color: #000000;
-    text-decoration: none;
+  font-size: 30px;
+  background-color: transparent;
+  color: #000000;
+  text-decoration: none;
 }
 
 .card-title a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 /* Navbar Hover Color */
@@ -331,19 +331,19 @@ height: 100%;
 }
 
 .nav-underline .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
   display: block;
   margin-top: 5px;
   right: 0;
-  /* background: blue;  *//* Color of the underline */
+  /* background: blue;  */ /* Color of the underline */
   transition: width 0.2s ease;
   -webkit-transition: width 0.2s ease;
 }
 
-.nav-underline .nav-link:hover{
+.nav-underline .nav-link:hover {
   color: rgb(55, 154, 193);
 }
 
@@ -553,3 +553,23 @@ height: 100%;
   }
 }
 /* End of Mission and Vission */
+
+/* Contact us map responsive*/
+.responsive-map {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  border: 2px solid rgb(192, 192, 192); /* Adjust the border thickness and color as needed */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.responsive-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+/* Contact us map responsive end */
