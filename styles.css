@@ -345,17 +345,17 @@ height: 100%;
 }
 
 .nav-underline .nav-link:hover{
-  color: blue;
+  color: rgb(55, 154, 193);
 }
 
 .nav-underline .nav-link:hover::after {
   width: 100%;
   left: 0;
-  background: blue;
+  background: rgb(55, 154, 193);
 }
 
 .nav-link.active {
-  color: blue !important; /* Color of the active link */
+  color: rgb(55, 154, 193) !important; /* Color of the active link */
 }
 /* Navbar Hover color end */
 
