@@ -36,33 +36,42 @@
 /*========================
  Carousel caption mobile responsive
 =========================*/
+@media (min-width: 767px) {
+  #corouselfs {
+    font-size: 30px;
+  }
+}
 @media (max-width: 768px) {
   .carousel-caption {
     bottom: 10%;
   }
 
-  .carousel-caption h5 {
-    font-size: 1.5rem;
+  .corousel-fs {
+    font-size: 10px;
   }
 
   .carousel-caption button {
-    font-size: 0.875rem;
-    padding: 0.5rem 0.75rem;
+    display: none;
   }
 }
 
 @media (max-width: 576px) {
   .carousel-caption {
-    bottom: 8%;
+    bottom: 0%;
   }
 
-  .carousel-caption h5 {
-    font-size: 13px;
+  .corousel-fs {
+    font-size: 5px;
   }
 
   .carousel-caption button {
-    font-size: 10px;
-    padding: 0.25rem 0.5rem;
+    display: none;
+  }
+}
+
+@media (max-width: 383px) {
+  #corouselfs {
+    font-size: 8px;
   }
 }
 
