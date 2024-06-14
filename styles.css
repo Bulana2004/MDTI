@@ -572,4 +572,22 @@
   height: 100%;
   border: 0;
 }
+*** Service ***/
+.service-item {
+    background: var(--light);
+    transition: .5s;
+}
+
+.service-item:hover {
+    margin-top: -10px;
+    background: var(--primary);
+}
+
+.service-item * {
+    transition: .5s;
+}
+
+.service-item:hover * {
+    color: var(--light) !important;
+}
 /* Contact us map responsive end */
