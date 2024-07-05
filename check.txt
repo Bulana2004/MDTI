@@ -14,3 +14,34 @@
   <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp" style="width:100%">
   <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" style="width:100%">
   <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" style="width:100%">
+
+
+
+
+
+
+
+
+
+   <section id="services" class="services">
+            <p style="font-size: 40px; color: rgba(0, 0, 0, 0.564);" class="fw-bold"> Room facilities
+            <p>
+        </section>
+
+
+        <p style="font-size: 20px; text-align: center; color: gray;"> Charges for rooms in hostels located in The
+            Institute (Wakwella)</p>
+        <img src="img/room1.png" alt="Room 1" width="100%">
+
+        <div class="announcement">
+            <p><strong>Important Announcement:</strong> The rooms must be delivered before 10.00 am the next day.
+            </p>
+        </div>
+
+        <p style="font-size: 20px; text-align: center; color: gray;" class="mt-5"> MDTI Rooms locations</p>
+        <img src="img/room2.png" alt="room 2" width="100%">
+
+        <!-- ======= note =======-->
+
+        <h3 class="fw-bold mt-5"> Note : </h3>
+        <img src="img/room3.png" alt="Room 3" width="100%">

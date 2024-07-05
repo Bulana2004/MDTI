@@ -18,9 +18,7 @@
     <link rel="stylesheet" href="counter/nicepage.css" />
     <link rel="stylesheet" href="counter/Page-1.css" />
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- CSS here -->
-    <!-- <link rel="stylesheet" href="CSS/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <!-- Icon Font Stylesheet -->
@@ -41,7 +39,7 @@
 
     <style>
         /*AboutUs Banner CSS*/
-        .banner {
+        #banner {
             position: relative;
             width: 100%;
             height: 30vh;
@@ -56,12 +54,12 @@
             text-transform: uppercase;
         }
 
-        .banner-content {
+        #banner-content {
             padding: 20px;
             border-radius: 10px;
         }
 
-        .banner h1 {
+        #banner p {
             margin: 0;
             font-size: 2.5em;
             text-shadow: 3px 3px 5px black;
@@ -128,12 +126,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav nav-underline underline-primary text-center">
+                <ul class="navbar-nav nav-underline text-center">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="index.html" style="font-size: 17px">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html" style="font-size: 17px">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="courses.html" style="font-size: 17px">Courses</a>
+                        <a class="nav-link " href="courses.html" style="font-size: 17px">Courses</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="Facilities.html" style="font-size: 17px">Facilities</a>
@@ -167,7 +165,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="login.html" style="font-size: 17px">Log in</a>
+                        <a class="nav-link" href="login.html" style="font-size: 17px">Log in</a>
                     </li>
 
                 </ul>
@@ -176,153 +174,140 @@
     </nav>
     <!--====Navbar-end====-->
 
-<body>
+    <div id="banner">
+        <div id="banner-content">
+            <p class="focus-in-expand-fwd">Details</p>
+        </div>
+    </div>
 
-    <style>
-        /* CSS styles go here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #003366;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #f4f4f4;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            color: #003366;
-            text-decoration: none;
-        }
-        main {
-            padding: 20px;
-        }
-        .announcement {
-            background-color: #ffcc00;
-            padding: 10px;
-            text-align: center;
-        }
-        .services {
-            margin-top: 20px;
-        }
-        .services h2 {
-            color: #003366;
-        }
-        .contact-info {
-            margin-top: 20px;
-            text-align: center;
-        }
-        footer {
-            background-color: #003366;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-
-    <header>
-        <h2 style="font-size: 35px;"> DETAILS</h2>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#services"> Rooms</a></li>
-            <li><a href="#news"> Lecture Hall </a></li>
-            <li><a href="#contact"> Food </a></li>
-        </ul>
-    </nav>
-    <main>
-       
+    <!-- images -->
+    <div class="container">
         <section id="services" class="services">
-            <p style="font-size: 40px; color: rgba(0, 0, 0, 0.564);" class="fw-bold"> Room facilities <p>        
+            <p style="font-size: 40px; color: black;" class="fw-bold"> Room facilities
+            <p>
         </section>
-        
-
-        <p style="font-size: 20px; text-align: center; color: gray;"> Charges for rooms in hostels located in The Institute (Wakwella)</p>
-        <center><img src="img/room1.png" style="height: 10%; width: 100%;"></center>
-
-         <div class="announcement">
-            <p><strong>Important Announcement:</strong> The rooms must be delivered before 10.00 am the next day.</p>
-        </div>
-
-        <p style="font-size: 20px; text-align: center; color: gray;" class="mt-5"> MDTI Rooms locations</p>
-         <center><img src="img/room2.png" style="height: 440px; width: 65%;"></center>
-
-         <!-- ======= note =======-->
-
-        <h3 class="fw-bold mt-5"> Note : </h3>
-         <center><img src="img/room3.png" style="height: 680px; width: 65%;"></center>
-
-        
-
-
-        <!-- ========== latest news ======= -->
-    <div class="container" data-aos="fade-up" data-aos-duration="1500">
-    <div class="accordion accordion-flush mb-5" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed border rounded-3 border-dark" type="button"
-            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-            aria-controls="flush-collapseOne">
-            Example Date (2023 January)
-          </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
-            <table class="table table-striped table-bordered">
-              <thead class="text-center">
-                <tr>
-                  <th>Date</th>
-                  <th>Name</th>
-                  <th>Download</th>
-                </tr>
-              </thead>
-              <tbody class="text-center">
-                <tr>
-                  <td>2024-01-22</td>
-                  <td>Gazzet</td>
-                  <td>
-                    <a href="Download/pdf/JavaScript Arrays.pdf" target="_blank">Download here</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-
     
+    
+        <p style="font-size: 30px; text-align: center; color: black;"> Charges for rooms in hostels located in The
+            Institute (Wakwella)</p>
+        <img src="img/room1.png" alt="Room 1" width="100%" class="mt-2">
+    
+        <div class="alert alert-primary" role="alert">
+            <p><strong>Important Announcement:</strong> The rooms must be delivered before 10.00 am the next day.
+            </p>
+        </div>
+    
+        <p style="font-size: 30px; text-align: center; color: black;" class="mt-5"> MDTI Rooms locations</p>
+        <img src="img/room2.png" alt="room 2" width="100%">
+    
+        <!-- ======= note =======-->
+    
+        <p class="fs-1" style="color: black; margin-top: 10%;">Note :</p>
+        <img src="img/room3.png" alt="Room 3" width="100%" class="mb-5">
+    </div>
+    <!-- End ofimages -->
 
-      <!-- === CONTACT INFORMATION == -->
-        <section id="contact" class="contact-info">
-            <h2>Contact Information</h2>
-            <p>Address: 123 Government St, City, Country</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Email: info@govoffice.gov</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Government Office</p>
+
+    <!--====Footer-start====-->
+    <footer class="text-center text-lg-start text-white" style="background-color: rgb(39, 39, 39)">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0 r">
+            <!-- Section: Links -->
+            <section class="justify-content-cente">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold" style="font-size: 16px">
+                            MDTI <span style="font-size: 5px">SP</span>
+                        </h6>
+                    </div>
+                    <hr class="w-100 clearfix d-md-none" />
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold" style="font-size: 16px">
+                            Site map
+                        </h6>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none" style="font-size: 14px"><i
+                                    class="bi bi-chevron-compact-right"></i> Home</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none" style="font-size: 14px"><i
+                                    class="bi bi-chevron-compact-right"></i> About Us</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none" style="font-size: 14px"><i
+                                    class="bi bi-chevron-compact-right"></i> Contact Us</a>
+                        </p>
+                    </div>
+                    <hr class="w-100 clearfix d-md-none" />
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold" style="font-size: 16px">
+                            Contact
+                        </h6>
+                        <p style="font-size: 14px">
+                            <i class="bi bi-geo-alt-fill"></i> Ginthota Wakwella Road,
+                            Wakwella, Galle
+                        </p>
+                        <p style="font-size: 14px">
+                            <i class="bi bi-envelope-fill"></i> info@gmail.com
+                        </p>
+                        <p style="font-size: 14px">
+                            <i class="bi bi-telephone-fill"></i> + 91 122 467 16
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold" style="font-size: 16px">
+                            Follow us
+                        </h6>
+
+                        <!-- Facebook -->
+                        <a class="btn m-1 text-bg-primary rounded-circle social-media-links" style="font-size: 16px"
+                            href="#!" role="button"><i class="bi bi-facebook"></i></a>
+
+                        <!-- Youtube -->
+                        <a class="btn text-bg-danger rounded-circle social-media-links" style="font-size: 16px"
+                            href="#!" role="button"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)" style="font-size: 16px">
+            © 2024 Copyright
+            <a class="text-white text-decoration-none" style="font-size: 16px" href="https://mdbootstrap.com/">MDTI</a>
+            <div class="text-end">
+                <p style="font-size: 8px">Developed by | COT GALLE DEV OP BATCH 3</p>
+            </div>
+        </div>
+        <!-- Copyright -->
     </footer>
+    <!--====Footer-End====-->
 </body>
+
+<!--=====Js files====-->
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/aos-master/dist/aos.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script class="u-script" type="text/javascript" src="counter/jquery-1.9.1.min.js" defer=""></script>
+<script class="u-script" type="text/javascript" src="counter/nicepage.js" defer=""></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="CSS/js/main.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+    $(document).ready(function () {
+        $('#pdf-button').on('click', function () {
+            PDFObject.embed('path/to/your.pdf', "#pdf-viewer");
+            $('#pdf-download').attr('href', 'path/to/your.pdf');
+        });
+    });
+</script>
+
 </html>
-
-
-
