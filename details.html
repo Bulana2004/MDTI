@@ -45,6 +45,31 @@
       =======================================================-->
 
     <style>
+        /* photos responsive css*/
+        
+        /* Default styling for images */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .responsive-img {
+        max-width: 100%; 
+        
+    }
+}
+
+/* Media query for larger screens (PCs, tablets, etc.) */
+@media (min-width: 769px) {
+    .responsive-img {
+        max-width: 50%;
+        
+    }
+}
+
+
         /*AboutUs Banner CSS*/
         #banner {
             position: relative;
@@ -280,111 +305,110 @@
       </ul>
     </nav>
     <main>
-        <section id="services" class="services">
-            <p style="font-size: 40px; color: black" class="fw-bold">
-                Room facilities
-            </p>
-            <p></p>
-        </section>
-
-        <p style="font-size: 20px; text-align: center; color: black">
-            Charges for rooms in hostels located in The Institute (Wakwella)
+    <section id="services" class="services">
+        <p style="font-size: 40px; color: black" class="fw-bold">
+            Room facilities
         </p>
-        <center><img src="img/room1.png" style="max-width: 100%; height: auto;" /></center>
+        <p></p>
+    </section>
 
-        <div class="announcement">
-            <p>
-                <strong>Important Announcement:</strong> The rooms must be delivered
-                before 10.00 am the next day.
-            </p>
-        </div>
+    <p style="font-size: 20px; text-align: center; color: black">
+        Charges for rooms in hostels located in The Institute (Wakwella)
+    </p>
+    <center><img src="img/room1.png" class="responsive-img" alt="Room 1"></center>
 
-        <p style="font-size: 20px; text-align: center; color: black" class="mt-5">
-            MDTI Rooms locations
+    <div class="announcement">
+        <p>
+            <strong>Important Announcement:</strong> The rooms must be delivered
+            before 10.00 am the next day.
         </p>
-        <center>
-            <img src="img/room2.png" style="max-width: 100%; height: auto;" />
-        </center>
+    </div>
 
-        <!-- ======= note =======-->
+    <p style="font-size: 20px; text-align: center; color: black" class="mt-5">
+        MDTI Rooms locations
+    </p>
+    <center>
+        <img src="img/room2.png" class="responsive-img" alt="Room 2">
+    </center>
 
-        <p class="fw-bold mt-5">Note :</p>
-        <center>
-            <img src="img/room3.png" style="max-width: 100%; height: auto;" />
-        </center>
-        <hr style="color: black; font-weight: 800;">
-        <!-- ====== food menu =======-->
-        <section id="services" class="services mt-5">
-            <p style="font-size: 30px; color: black" class="fw-bold">
-                Food menus
-            </p>
-        </section>
+    <!-- Note Section -->
+    <p class="fw-bold mt-5">Note :</p>
+    <center>
+        <img src="img/room3.png" class="responsive-img" alt="Room 3">
+    </center>
+    <hr style="color: black; font-weight: 800;">
 
-        <!-- accordian -->
-        <div class="container mb-5">
-            <div class="accordion accordion-flush border rounded-5 shadow" id="accordionFlushExample">
-                <div class="accordion-item ">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+    <!-- Food Menus Section -->
+    <section id="services" class="services mt-5">
+        <p style="font-size: 30px; color: black" class="fw-bold">
+            Food menus
+        </p>
+    </section>
+
+    <!-- Accordion -->
+    <div class="container mb-5">
+        <div class="accordion accordion-flush border rounded-5 shadow" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Accordion Item #1
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <img src="img/food1.png" alt="Food 1" width="100%">
-                        </div>
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                     data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <img src="img/food1.png" class="responsive-img" alt="Food 1">
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Accordion Item #2
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <img src="img/food2.png" alt="Food 1" width="100%">
-                        </div>
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                     data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <img src="img/food2.png" class="responsive-img" alt="Food 2">
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            Accordion Item #3
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <img src="img/food3.png" alt="Food 1" width="100%">
-                        </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                     data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <img src="img/food3.png" class="responsive-img" alt="Food 3">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End of accordian -->
+    </div>
+    <!-- End of Accordion -->
 
-        <!-- ========== Lecture Halls ======-->
-
-        <section id="services" class="services mt-5">
-            <p style="font-size: 30px; color: rgb(0, 0, 0)" class="fw-bold text-center">
-                Reservations and Payments
-            </p>
-        </section>
-        <div class="row">
-            <div class="col-md-12">
-                <center><img src="img/payment.png" style="max-width: 100%; height: auto;"></center>
-            </div>
+    <!-- Reservations and Payments Section -->
+    <section id="services" class="services mt-5">
+        <p style="font-size: 30px; color: rgb(0, 0, 0)" class="fw-bold text-center">
+            Reservations and Payments
+        </p>
+    </section>
+    <div class="row">
+        <div class="col-md-12">
+            <center><img src="img/payment.png" class="responsive-img" alt="Payment"></center>
         </div>
-    </main>
+    </div>
+</main>
+
     <!-- === CONTACT INFORMATION == -->
-    </main>
+
 
     <!--====Footer-start====-->
     <footer class="text-center text-lg-start text-white" style="background-color: rgb(39, 39, 39)">
