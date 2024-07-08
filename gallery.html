@@ -33,8 +33,11 @@
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet" />
 
+    
   <style>
+    
     .banner {
+      background: linear-gradient(to bottom, #d4f0f9, #58cefc);
       position: relative;
       width: 100%;
       height: 30vh;
@@ -178,121 +181,95 @@
   </div>
   <!--================== GALLERY =================-->
 
-  <section class="bg-light py-4 my-5">
-    <div class="container">
-      
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <div class="card my-3">
-            <img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" class="card-image-top"
-              alt="thumbnail" />
+ 
+<style>
+    .card {
+        transition: box-shadow 0.3s ease-in-out;
+    }
 
-            <div class="card-body">
-              <h3 class="card-title">
-                <a href="gallery1.1.html" class="text-secondary">What is HTML</a>
-              </h3>
-              <p class="card-text">
-                HTML stands for Hyper Text Markup Language, It helps to learn
-                web development and designing.
+    .card:hover {
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-img-top {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card-img-top:hover {
+        transform: scale(1.05);
+    }
+</style>
+
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-3">
+    <div class="col">
+        <div class="card">
+         <a  href="#!">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top"
+                  alt="Hollywood Sign on The Hill" />
+          </a>
+          <div class="card-body">
+              <a href="gallery1.1.html" class="card-title" style="font-size: 25px; font-weight: 400;">Card title</a>
+              <p class="card-text" style="color: #868788;">
+                  This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
               </p>
-              <a href="gallery1.1.html" class="btn btn-primary">photos »</a>
-            </div>
           </div>
         </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card my-3">
-            <img src="https://images.pexels.com/photos/3848158/pexels-photo-3848158.jpeg" class="card-image-top"
-              alt="thumbnail" />
-
-            <div class="card-body">
-              <h3 class="card-title">
-                <a href="#" class="text-secondary">Why We Use HTML</a>
-              </h3>
-              <p class="card-text">
-                We use HTML to make website and that website helps to gain
-                very much knowledge.
-              </p>
-              <a href="gallery1.1.html" class="btn btn-primary">photos »</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card my-3">
-            <img src="https://images.pexels.com/photos/2343170/pexels-photo-2343170.jpeg" class="card-image-top"
-              alt="thumbnail" />
-            <div class="card-body">
-              <h3 class="card-title">
-                <a href="gallery1.1.html" class="text-secondary">People came from?</a>
-              </h3>
-              <p class="card-text">
-                Pellentesque dictum consequat tincidunt. Sed tincidunt tortor
-                nec vulputate gravida.
-              </p>
-              <a href="gallery1.1.html" class="btn btn-primary">photos »</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card my-3">
-            <img src="https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg" class="card-image-top"
-              alt="thumbnail" />
-            <div class="card-body">
-              <h3 class="card-title">
-                <a href="gallery1.1.html" class="text-secondary">What is Lorem Ipsum?</a>
-              </h3>
-              <p class="card-text">
-                Pellentesque dictum consequat tincidunt. Sed tincidunt tortor
-                nec vulputate gravida. Nam sapien nisi, malesuada at sapien
-                suscipit.
-              </p>
-              <a href="gallery1.1.html" class="btn btn-primary">photos »</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card my-3">
-            <img src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg" class="card-image-top"
-              alt="thumbnail" />
-            <div class="card-body">
-              <h3 class="card-title">
-                <a href="gallery1.1.html" class="text-secondary">Where is my Pasta?</a>
-              </h3>
-              <p class="card-text">
-                Pellentesque dictum consequat tincidunt. Sed tincidunt tortor
-                nec vulputate gravida. Nam sapien nisi, malesuada at sapien
-                suscipit,
-              </p>
-              <a href="gallery1.1.html" class="btn btn-primary">photos »</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card my-3">
-            <img src="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg" class="card-image-top"
-              alt="thumbnail" />
-
-            <div class="card-body">
-              <h3 class="card-title">
-                <a href="gallery1.1.html" class="text-secondary">Why is sky blue ?</a>
-              </h3>
-              <p class="card-text">
-                Pellentesque dictum consequat tincidunt. Sed tincidunt tortor
-                nec vulputate gravida. Nam sapien nisi, malesuada at sapien
-                suscipit.
-              </p>
-              <a href="gallery1.1.html" class="btn btn-primary">photos »</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-  </div>
+
+    <div class="col">
+        <div class="card">
+          <a href="gallery1.1.html">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top"
+                  alt="Hollywood Sign on The Hill" />
+          </a>
+          <div class="card-body">
+              <a href="gallery1.1.html" class="card-title" style="font-size: 25px; font-weight: 400;">Card title</a>
+              <p class="card-text" style="color: #868788;">
+                  This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+              </p>
+          </div>
+        </div>
+    </div>
+    
+
+    <div class="col">
+        <div class="card">
+          <a href="gallery1.1.html">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top"
+                  alt="Hollywood Sign on The Hill" />
+          </a>
+          <div class="card-body">
+              <a href="gallery1.1.html" class="card-title" style="font-size: 25px; font-weight: 400;">Card title</a>
+              <p class="card-text" style="color: #868788;">
+                  This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+              </p>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    <div class="col">
+          <div class="card">
+            <a href="gallery1.1.html">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/046.webp" class="card-img-top"
+                    alt="Hollywood Sign on The Hill" />
+            </a>
+            <div class="card-body">
+                <a href="gallery1.1.html" class="card-title" style="font-size: 25px; font-weight: 400;">Card title</a>
+                <p class="card-text" style="color: #868788;">
+                    This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                </p>
+            </div>
+          </div>
+    </div>
+
+</div>
+
+<!-- end -->
+
+
   <footer class="text-center text-lg-start text-white" style="background-color: rgb(39, 39, 39)">
     <!-- Grid container -->
     <div class="container p-4 pb-0 r">

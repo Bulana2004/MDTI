@@ -1,0 +1,43 @@
+.banner {
+      position: relative;
+      width: 100%;
+      height: 30vh;
+      background-color: rgb(55, 154, 193);
+      background-size: cover;
+      background-position: 69%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .banner-content {
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .banner h1 {
+      margin: 0;
+      font-size: 2.5em;
+      text-shadow: 3px 3px 5px black;
+
+
+      ---------------------------
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card my-3">
+            <img src="img/gallery1.jpg" class="card-image-top"
+              alt="thumbnail" />
+            <div class="card-body">
+              <h3 class="card-title">
+                <a href="gallery1.1.html" class="text-dark">Where is my Pasta?</a>
+              </h3>
+              <p class="card-text">
+                loarm
+              </p>
+              <a href="gallery1.1.html" class="btn btn-primary"> see more </a>
+            </div>
+          </div>
+        </div>
