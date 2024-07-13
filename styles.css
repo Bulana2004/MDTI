@@ -20,6 +20,10 @@
   align-items: center;
 }
 
+.hidden{
+  display: none;
+}
+
 .header_color {
   background-color: rgb(195, 199, 202);
 }

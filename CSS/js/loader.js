@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const loader = document.querySelector(".loader");
-  loader.style.display = "none";
+window.addEventListener("load", function () {
+  document.querySelector(".loader").classList.add("hidden")
 });
