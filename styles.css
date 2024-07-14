@@ -1,4 +1,6 @@
-#more {display: none;}
+#more {
+  display: none;
+}
 
 /*===Google Fonts===*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
@@ -7,6 +9,7 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+/* Loader */
 .loader {
   position: fixed;
   top: 0;
@@ -20,9 +23,10 @@
   align-items: center;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
+/* End of loader */
 
 .header_color {
   background-color: rgb(195, 199, 202);
@@ -392,9 +396,19 @@
   font-size: 1rem;
   font-weight: 400;
   font-style: italic;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:
+    "Roboto Slab",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
   margin-bottom: 4rem;
 }
 .timeline {
@@ -591,22 +605,21 @@
   height: 100%;
   border: 0;
 }
-*** Service ***/
-.service-item {
-    background: var(--light);
-    transition: .5s;
+*** Service ***/ .service-item {
+  background: var(--light);
+  transition: 0.5s;
 }
 
 .service-item:hover {
-    margin-top: -10px;
-    background: var(--primary);
+  margin-top: -10px;
+  background: var(--primary);
 }
 
 .service-item * {
-    transition: .5s;
+  transition: 0.5s;
 }
 
 .service-item:hover * {
-    color: var(--light) !important;
+  color: var(--light) !important;
 }
 /* Contact us map responsive end */
