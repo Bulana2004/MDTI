@@ -164,7 +164,7 @@
     <!--====Header-end====-->
 
     <!--====Navbar-start====-->
-    <nav class="navbar navbar-expand-lg navbar_bg sticky-top">
+    <nav class="navbar navbar-expand-lg navbar_bg">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo.png" alt="..." width="150px" />
@@ -229,7 +229,7 @@
             <p class="focus-in-expand-fwd">Details</p>
         </div>
     </div>
-    <div id="roomfaci"></div>
+    <div></div>
     <!-- <nav class="nav-second">
         <ul>
             <li><a href="#roomfaci"> Rooms</a></li>
@@ -240,7 +240,7 @@
     <main>
         <section id="services" class="services">
             <div class="text-center">
-                <p style="font-size: 40px; color: black" class="fw-bold display-4">
+                <p style="font-size: 40px; color: black; letter-spacing: 2px;" class="fw-bold display-4" id="roomfaci">
                     Room facilities
                 </p>
             </div>
@@ -274,14 +274,14 @@
         </center>
         <hr style="color: black; font-weight: 800;" class="container">
 
-        <div id="foodmrnu"></div>
+        <div></div>
         <br>
         <br>
         <br>
 
         <!-- Food Menus Section -->
         <section id="services" class="services mt-5">
-            <p style="font-size: 30px; color: black; letter-spacing: 3px;" class="text-center fs-1" id="food">
+            <p style="font-size: 30px; color: black; letter-spacing: 3px;" class="text-center fs-1" id="foodmrnu">
                 Food menus
             </p>
         </section>
@@ -437,12 +437,8 @@
             </div>
     </main>
     <main>
-        <div id="lecturehalls"></div>
-        <br>
-        <br>
-        <br>
         <section class="services">
-            <p style="font-size: 40px; color: black" class="fw-bold text-center" id="lecture">
+            <p style="font-size: 40px; color: black" class="fw-bold text-center" id="lecturehalls">
                 Lecture Hall
             </p>
             <p></p>
@@ -538,6 +534,10 @@
         <!-- Copyright -->
     </footer>
     <!--====Footer-End====-->
+
+    <div id="btnScrollToTop">
+        <i class="bi bi-arrow-up"></i>
+    </div>
 </body>
 
 <!--=====Js files====-->
@@ -562,6 +562,16 @@
             $('#pdf-download').attr('href', 'path/to/your.pdf');
         });
     });
+
+    const btnScrollToTop = document.querySelector('#btnScrollToTop')
+
+    btnScrollToTop.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        })
+    })
 </script>
 
 <!-- content Loder -->

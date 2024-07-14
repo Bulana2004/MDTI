@@ -48,6 +48,10 @@
   </div>
   <!-- End of pre lodare -->
 
+  <div id="btnScrollToTop">
+    <i class="bi bi-arrow-up"></i>
+  </div>
+
   <!--====Header====-->
   <div class="header_color">
     <div class="header_fonts mx-2 text-end" id="header-info">
@@ -95,7 +99,7 @@
   <!--====Header-end====-->
 
   <!--====Navbar-start====-->
-  <nav class="navbar navbar-expand-lg navbar_bg sticky-top">
+  <nav class="navbar navbar-expand-lg navbar_bg">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="img/logo.png" alt="..." width="150px" />
@@ -784,6 +788,16 @@
 <script class="u-script" type="text/javascript" src="counter/nicepage.js" defer=""></script>
 <script>
   AOS.init();
+
+  const btnScrollToTop = document.querySelector("#btnScrollToTop")
+
+  btnScrollToTop.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  })
 </script>
 <script src="CSS/js/loader.js"></script>
 

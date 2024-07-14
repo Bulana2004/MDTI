@@ -126,7 +126,7 @@
     <!--====Header-end====-->
 
     <!--====Navbar-start====-->
-    <nav class="navbar navbar-expand-lg navbar_bg sticky-top">
+    <nav class="navbar navbar-expand-lg navbar_bg">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo.png" alt="..." width="150px" />
@@ -401,6 +401,10 @@
         <!-- Copyright -->
     </footer>
     <!--====Footer-End====-->
+
+    <div id="btnScrollToTop">
+        <i class="bi bi-arrow-up"></i>
+    </div>
 </body>
 
 <!--=====Js files====-->
@@ -430,6 +434,16 @@
 
     window.addEventListener("load", function () {
         document.querySelector(".loader").classList.add("hidden")
+    })
+
+    const btnScrollToTop = document.querySelector("#btnScrollToTop")
+
+    btnScrollToTop.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        })
     })
 </script>
 
