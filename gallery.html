@@ -324,6 +324,15 @@
   window.addEventListener("load", function () {
     document.querySelector(".loader").classList.add("hidden")
   })
+
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.location.hash) {
+      const elemnt = document.querySelector(window.location.hash)
+      if (elemnt) {
+        elemnt.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  })
 </script>
 
 </html>
