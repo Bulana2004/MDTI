@@ -66,6 +66,10 @@
 </head>
 
 <body>
+  <div class="loader">
+    <img src="img/1484.gif" alt="Loder....">
+  </div>
+
   <!--====Header====-->
   <div class="header_color">
     <div class="header_fonts mx-2 text-end" id="header-info">
@@ -616,6 +620,10 @@
 <script src="assets/aos-master/dist/aos.js"></script>
 <script>
   AOS.init();
+
+  window.addEventListener("load", function () {
+    document.querySelector(".loader").classList.add("hidden")
+  })
 </script>
 
 </html>

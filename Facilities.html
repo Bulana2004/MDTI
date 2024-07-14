@@ -72,6 +72,13 @@
 </head>
 
 <body>
+
+    <!-- Pre loader -->
+    <div class="loader">
+        <img src="img/1484.gif" alt="loader">
+    </div>
+    <!-- End of pre loader -->
+
     <!--====Header====-->
     <div class="header_color">
         <div class="header_fonts mx-2 text-end" id="header-info">
@@ -409,6 +416,21 @@
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <script>
     AOS.init();
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        if (window.location.hash) {
+            const element = document.querySelector(window.location.hash)
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" })
+            }
+        }
+    })
+
+    window.addEventListener("load", function () {
+        document.querySelector(".loader").classList.add("hidden")
+    })
 </script>
 
 </html>
