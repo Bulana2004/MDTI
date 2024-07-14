@@ -65,6 +65,9 @@
 </head>
 
 <body>
+  <div class="loader">
+    <img src="img/1484.gif" alt="Loader....">
+  </div>
   <!--====Header====-->
   <div class="header_color">
     <div class="header_fonts mx-2 text-end" id="header-info">
@@ -148,22 +151,22 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li class="nav-item">
-                  <a class="nav-link text-center" href="controlboard.html" style="font-size: 17px">Control
-                      board</a>
+                <a class="nav-link text-center" href="controlboard.html" style="font-size: 17px">Control
+                  board</a>
               </li>
               <li>
-                  <a class="nav-link text-center" href="aboutUs.html" style="font-size: 17px">About Us</a>
+                <a class="nav-link text-center" href="aboutUs.html" style="font-size: 17px">About Us</a>
               </li>
               <li>
-                  <a class="nav-link text-center active" href="staff.html" style="font-size: 17px">Our Staff</a>
+                <a class="nav-link text-center active" href="staff.html" style="font-size: 17px">Our Staff</a>
               </li>
               <li></li>
-          </ul>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login.html" style="font-size: 17px">Log in</a>
           </li>
-          
+
         </ul>
       </div>
     </div>
@@ -395,6 +398,10 @@
 <script src="assets/aos-master/dist/aos.js"></script>
 <script>
   AOS.init();
+
+  window.addEventListener("load", function () {
+    document.querySelector(".loader").classList.add("hidden")
+  });
 </script>
 
 </html>

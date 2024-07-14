@@ -63,6 +63,9 @@
 </head>
 
 <body>
+  <div class="loader">
+    <img src="img/1484.gif" alt="">
+  </div>
 
   <!--====Header====-->
   <div class="header_color">
@@ -147,22 +150,22 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li class="nav-item">
-                  <a class="nav-link text-center" href="controlboard.html" style="font-size: 17px">Control
-                      board</a>
+                <a class="nav-link text-center" href="controlboard.html" style="font-size: 17px">Control
+                  board</a>
               </li>
               <li>
-                  <a class="nav-link text-center" href="aboutUs.html" style="font-size: 17px">About Us</a>
+                <a class="nav-link text-center" href="aboutUs.html" style="font-size: 17px">About Us</a>
               </li>
               <li>
-                  <a class="nav-link text-center" href="staff.html" style="font-size: 17px">Our Staff</a>
+                <a class="nav-link text-center" href="staff.html" style="font-size: 17px">Our Staff</a>
               </li>
               <li></li>
-          </ul>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="login.html" style="font-size: 17px">Log in</a>
           </li>
-         
+
         </ul>
       </div>
     </div>
@@ -320,5 +323,11 @@
   </footer>
   <!--====Footer-End====-->
 </body>
+
+<script>
+  window.addEventListener("load", function () {
+    document.querySelector(".loader").classList.add("hidden")
+  })
+</script>
 
 </html>
