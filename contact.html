@@ -70,6 +70,10 @@
     <img src="img/1484.gif" alt="Loder....">
   </div>
 
+  <div id="btnScrollToTop">
+    <i class="bi bi-arrow-up"></i>
+  </div>
+
   <!--====Header====-->
   <div class="header_color">
     <div class="header_fonts mx-2 text-end" id="header-info">
@@ -624,6 +628,20 @@
   window.addEventListener("load", function () {
     document.querySelector(".loader").classList.add("hidden")
   })
+</script>
+
+<script>
+  AOS.init();
+
+const btnScrollToTop = document.querySelector("#btnScrollToTop")
+
+btnScrollToTop.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+})
 </script>
 
 </html>

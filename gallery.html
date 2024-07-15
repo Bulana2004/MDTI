@@ -71,6 +71,10 @@
   <div class="loader">
     <img src="img/1484.gif" alt="loader">
   </div>
+
+  <div id="btnScrollToTop">
+    <i class="bi bi-arrow-up"></i>
+  </div>
   <!-- End of pre loader -->
 
   <!--====Header====-->
@@ -367,6 +371,19 @@
       }
     }
   })
+</script>
+<script>
+  AOS.init();
+
+const btnScrollToTop = document.querySelector("#btnScrollToTop")
+
+btnScrollToTop.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+})
 </script>
 
 </html>
