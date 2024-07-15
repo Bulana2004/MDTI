@@ -117,6 +117,12 @@
 </head>
 
 <body>
+    <!-- Loader -->
+    <div class="loader">
+        <img src="img/1484.gif" alt="Loader...">
+    </div>
+    <!-- Loader End -->
+
     <!--====Header====-->
     <div class="header_color">
         <div class="header_fonts mx-2 text-end" id="header-info">
@@ -575,6 +581,13 @@
             left: 0,
             behavior: 'smooth'
         })
+    })
+</script>
+
+<!-- loader js -->
+<script>
+    window.addEventListener('load', function () {
+        document.querySelector(".loader").classList.add("hidden")
     })
 </script>
 
