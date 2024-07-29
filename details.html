@@ -11,7 +11,7 @@
     <link rel="icon" href="img/favicon-32x32.png" sizes="32x32" type="image/png" />
     <!--====Css link====-->
     <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive-style.css" />
     <link rel="stylesheet" href="animated.css" />
     <link rel="stylesheet" href="assets/aos-master/dist/aos.css" />
@@ -170,7 +170,7 @@
     <!--====Header-end====-->
 
     <!--====Navbar-start====-->
-    <nav class="navbar navbar-expand-lg navbar_bg">
+    <nav class="navbar navbar-expand-lg navbar_bg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo.png" alt="..." width="150px" />
@@ -206,16 +206,19 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li class="nav-item">
-                                <a class="nav-link text-center " href="controlboard.html" style="font-size: 17px">Control
+                                <a class="nav-link text-center " href="controlboard.html"
+                                    style="font-size: 17px">Control
                                     board</a>
                             </li>
                             <li>
                                 <a class="nav-link text-center" href="aboutUs.html" style="font-size: 17px">About Us</a>
                             </li>
                             <li>
-                                <a class="nav-link text-center disabled" href="staff.html" style="font-size: 17px">Our Staff</a>
+                                <a class="nav-link text-center disabled" href="staff.html" style="font-size: 17px">Our
+                                    Staff</a>
                             </li>
-                            <li><a class="nav-link text-center" href="coordinator.html" style="font-size: 17px">Coordinator</a></li>
+                            <li><a class="nav-link text-center" href="coordinator.html"
+                                    style="font-size: 17px">Coordinator</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -417,38 +420,38 @@
                 </p>
             </div>
         </div>
-                <div class="alert alert-warning">
-                    <center>
-                        <p class="container">
-                            <strong>සැ.යු :</strong> යම් සැලසුම් කල වැඩසටහනක පලමු ආහාරවේල් කල්තිය සකස් කරන බැවින් ඇනවුම් කල
-                            මුළු පිරිස/සංඛ්‍යාව සදහාම (සැලසුම් කල පිරිසට වඩා සත්‍ය වශයෙන් පැමිණි පිරිස අඩු වුවද ) එම ආහාර
-                            වේල් සදහා අනිවාර්‍යයෙන් ගෙවීම් කල යුතුය.
-                        </p>
-                    </center>
-                </div>
-
-                <center><img src="img/food10.jpeg" class="responsive-img" alt="Food 10"></center>
-
-            </div>
-
-            <!-- End of Accordion -->
-
-            <!-- Reservations and Payments Section -->
-            <section id="services" class="services mt-5">
-                <p style="font-size: 30px; color: rgb(0, 0, 0)" class="fw-bold text-center">
-                    Reservations and Payments
+        <div class="alert alert-warning">
+            <center>
+                <p class="container">
+                    <strong>සැ.යු :</strong> යම් සැලසුම් කල වැඩසටහනක පලමු ආහාරවේල් කල්තිය සකස් කරන බැවින් ඇනවුම් කල
+                    මුළු පිරිස/සංඛ්‍යාව සදහාම (සැලසුම් කල පිරිසට වඩා සත්‍ය වශයෙන් පැමිණි පිරිස අඩු වුවද ) එම ආහාර
+                    වේල් සදහා අනිවාර්‍යයෙන් ගෙවීම් කල යුතුය.
                 </p>
-            </section>
-            <div class="row">
-                <div class="col-md-12">
-                    <center><img src="img/payment.png" class="responsive-img" alt="Payment"></center>
-                </div>
+            </center>
+        </div>
+
+        <center><img src="img/food10.jpeg" class="responsive-img" alt="Food 10"></center>
+
+        </div>
+
+        <!-- End of Accordion -->
+
+        <!-- Reservations and Payments Section -->
+        <section id="services" class="services mt-5">
+            <p style="font-size: 30px; color: rgb(0, 0, 0)" class="fw-bold text-center">
+                Reservations and Payments
+            </p>
+        </section>
+        <div class="row">
+            <div class="col-md-12">
+                <center><img src="img/payment.png" class="responsive-img" alt="Payment"></center>
             </div>
+        </div>
     </main>
     <main>
         <section class="services">
-            <p style="font-size: 40px; color: black; letter-spacing: 2px;" class="fw-bold text-center"
-                id="lecturehalls">
+            <div id="lecturehalls"></div>
+            <p style="font-size: 40px; color: black; letter-spacing: 2px;" class="fw-bold text-center">
                 Lecture Hall
             </p>
             <p></p>
@@ -552,16 +555,14 @@
 
 <!--=====Js files====-->
 <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/jquery.min.js"></script>
 <script src="assets/aos-master/dist/aos.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-<script class="u-script" type="text/javascript" src="counter/jquery-1.9.1.min.js" defer=""></script>
-<script class="u-script" type="text/javascript" src="counter/nicepage.js" defer=""></script>
 <script src="lib/wow/wow.min.js"></script>
 <script src="lib/easing/easing.min.js"></script>
 <script src="lib/waypoints/waypoints.min.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="CSS/js/main.js"></script>
+<script src="assets/js/jquery.min.js"></script>
 <script>
     AOS.init();
 </script>
@@ -572,6 +573,16 @@
             $('#pdf-download').attr('href', 'path/to/your.pdf');
         });
     });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        if (window.location.hash) {
+            const elemnt = document.querySelector(window.location.hash)
+            if (elemnt) {
+                elemnt.scrollIntoView({ behavior: 'smooth' })
+            }
+        }
+    })
+
 
     const btnScrollToTop = document.querySelector('#btnScrollToTop')
 
@@ -590,11 +601,6 @@
         document.querySelector(".loader").classList.add("hidden")
     })
 </script>
-
-
-
-<!-- content Loder -->
-<script src="CSS/js/scrollintoview.js"></script>
 
 </html>
 
