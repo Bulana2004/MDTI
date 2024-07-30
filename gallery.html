@@ -234,8 +234,8 @@
     <!--============ gallery end ========-->
     </div>
     </div>
+    <hr class="mt-5 mb-5">
   </section>
-  <hr hight="3px">
   <!-- Project 2 - Bootstrap Brain Component -->
   <section class="bg-light py-5 py-xl-8">
     <div class="container">
@@ -374,10 +374,12 @@
       }
     }
   })
+
+  const navigationHeight = document.querySelector('.navbar').offsetHeight;
+  // console.log(navigationHeight);
+  document.documentElement.style.setProperty('--scroll--padding', navigationHeight + 1 + 'px')
 </script>
 <script>
-  AOS.init();
-
   const btnScrollToTop = document.querySelector("#btnScrollToTop")
 
   btnScrollToTop.addEventListener("click", function () {
