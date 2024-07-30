@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-padding-top: 125px;">
 
 <head>
   <!--====Meta tags====-->
@@ -17,6 +17,13 @@
   <link rel="stylesheet" href="assets/aos-master/dist/aos.css" />
   <link rel="stylesheet" href="counter/nicepage.css" />
   <link rel="stylesheet" href="counter/Page-1.css" />
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- <link rel="stylesheet" href="CSS/bootstrap.min.css"> -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
   <!--====Bootstrap Icons====-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <!--====Google Fonts====-->
@@ -26,12 +33,13 @@
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet" />
 
+
   <style>
     .banner {
       position: relative;
       width: 100%;
       height: 30vh;
-      background-color: rgb(55, 154, 193);
+      background-color: rgb(50, 190, 245);
       background-size: cover;
       background-position: 69%;
       display: flex;
@@ -59,6 +67,16 @@
 </head>
 
 <body>
+  <!-- Pre loader -->
+  <div class="loader">
+    <img src="img/1484.gif" alt="loader">
+  </div>
+
+  <div id="btnScrollToTop">
+    <i class="bi bi-arrow-up"></i>
+  </div>
+  <!-- End of pre loader -->
+
   <!--====Header====-->
   <div class="header_color">
     <div class="header_fonts mx-2 text-end" id="header-info">
@@ -142,21 +160,22 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li class="nav-item">
-                <a class="nav-link" href="controlboard.html" style="font-size: 17px">Control board</a>
+                <a class="nav-link text-center" href="controlboard.html" style="font-size: 17px">Control
+                  board</a>
               </li>
               <li>
-                <a class="dropdown-item" href="aboutUs.html" style="font-size: 17px">About Us</a>
+                <a class="nav-link text-center" href="aboutUs.html" style="font-size: 17px">About Us</a>
               </li>
               <li>
-                <a class="dropdown-item" href="staff.html" style="font-size: 17px">Our Staff</a>
+                <a class="nav-link text-center disabled" href="staff.html" style="font-size: 17px">Our Staff</a>
               </li>
-              <li></li>
+              <li><a class="nav-link text-center" href="coordinator.html" style="font-size: 17px">Coordinator</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login.html" style="font-size: 17px">Log in</a>
           </li>
-          
+
         </ul>
       </div>
     </div>
@@ -168,122 +187,98 @@
       <h1 class="focus-in-expand-fwd">gallery</h1>
     </div>
   </div>
-  <!--================== GALLERY =================-->
 
-  <section class="bg-light py-4 my-5">
+  <style>
+    /* Add this CSS to your stylesheet */
+
+    .image-animate {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .image-animate:hover {
+      transform: scale(1.05);
+    }
+  </style>
+
+  <!-- Project 1 - Bootstrap Brain Component -->
+  <section class="bg-light py-5 py-xl-8">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <div class="card my-3">
-            <img src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg" class="card-image-top"
-              alt="thumbnail" />
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+          <!-- <h2  class="mb-5 display-5 text-center" style="color: rgb(120, 181, 200); font-size: 44px;"> Our
+            Projects</h2> -->
+          <p id="section1" class="text-secondary mb-5 text-center lead fs-5" style="font-size: 14px;">ශ්‍රී ලංකාවේ
+            විශිෂ්ටතම පුහුණු
+            මධ්‍යස්ථානය දකුණෙන්..MDTI අපි ..👊
 
-            <div class="card-body">
-              <h3 class="card-title">
-                <a href="gallery1.1.html" class="text-secondary">What is HTML</a>
-              </h3>
-              <p class="card-text">
-                HTML stands for Hyper Text Markup Language, It helps to learn
-                web development and designing.
-              </p>
-              <a href="gallery1.1.html" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card my-3">
-            <img src="https://images.pexels.com/photos/3848158/pexels-photo-3848158.jpeg" class="card-image-top"
-              alt="thumbnail" />
-
-            <div class="card-body">
-              <h3 class="card-title">
-                <a href="#" class="text-secondary">Why We Use HTML</a>
-              </h3>
-              <p class="card-text">
-                We use HTML to make website and that website helps to gain
-                very much knowledge.
-              </p>
-              <a href="gallery1.1.html" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card my-3">
-            <img src="https://images.pexels.com/photos/2343170/pexels-photo-2343170.jpeg" class="card-image-top"
-              alt="thumbnail" />
-            <div class="card-body">
-              <h3 class="card-title">
-                <a href="gallery1.1.html" class="text-secondary">People came from?</a>
-              </h3>
-              <p class="card-text">
-                Pellentesque dictum consequat tincidunt. Sed tincidunt tortor
-                nec vulputate gravida.
-              </p>
-              <a href="gallery1.1.html" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card my-3">
-            <img src="https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg" class="card-image-top"
-              alt="thumbnail" />
-            <div class="card-body">
-              <h3 class="card-title">
-                <a href="gallery1.1.html" class="text-secondary">What is Lorem Ipsum?</a>
-              </h3>
-              <p class="card-text">
-                Pellentesque dictum consequat tincidunt. Sed tincidunt tortor
-                nec vulputate gravida. Nam sapien nisi, malesuada at sapien
-                suscipit.
-              </p>
-              <a href="gallery1.1.html" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card my-3">
-            <img src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg" class="card-image-top"
-              alt="thumbnail" />
-            <div class="card-body">
-              <h3 class="card-title">
-                <a href="gallery1.1.html" class="text-secondary">Where is my Pasta?</a>
-              </h3>
-              <p class="card-text">
-                Pellentesque dictum consequat tincidunt. Sed tincidunt tortor
-                nec vulputate gravida. Nam sapien nisi, malesuada at sapien
-                suscipit,
-              </p>
-              <a href="gallery1.1.html" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <div class="card my-3">
-            <img src="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg" class="card-image-top"
-              alt="thumbnail" />
-
-            <div class="card-body">
-              <h3 class="card-title">
-                <a href="gallery1.1.html" class="text-secondary">Why is sky blue ?</a>
-              </h3>
-              <p class="card-text">
-                Pellentesque dictum consequat tincidunt. Sed tincidunt tortor
-                nec vulputate gravida. Nam sapien nisi, malesuada at sapien
-                suscipit.
-              </p>
-              <a href="gallery1.1.html" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
+            දකුණු පළාත් රාජ්‍ය සේවයේ සේවා ස්ථාන ඵලදායිතාව උදෙසා
+            දකුණු පළාත් ප්‍රධාන ලේකම් නිතීඥ සුමිත් අලහකෝන් මහතාගේ උපදෙස් හා මගපෙන්වීම මත, නියෝජ්‍ය ප්‍රධාන ලේකම් (පිරිස්
+            හා පුහුණු) දිලේඛා කුඩාච්චි මහත්මියගේ අධීක්ෂණය සමගින් ,කළමනාකරණ සංවර්ධන හා පුහුණු ආයතනයේ අධ්‍යක්ෂ නීතිඥ
+            රොෂාන් අමරසිංහ මයා සමඟ
+            ජාතික ශ්‍රම අධ්‍යයන ආයතනයේ අධ්‍යක්ෂ ජනරාල් ඩබ්ලිව් .එම්.ඩී.සුරංග ගුණරත්න මහතා 2024.07.24 දින සේවා ස්ථාන
+            ඵලදායීතාව පිළිබඳ එක් අවුරුදු ඩිප්ලෝමා පාඨමාලාව ඇතුළු ඉදිරි ඩිප්ලෝමා පාඨමාලා කිහිපයක් සඳහාද අවබෝධතා ගිවිසුමට
+            අත්සන් කිරීම සිදු කරන ලදී.</p>
         </div>
       </div>
     </div>
+    <!-- =========== gallery start =======-->
+    <div class="container d-flex justify-content-center">
+      <div class="row justify-content-center">
+        <!-- column 1 -->
+        <div class="col-lg-4 col-md-12 mb-lg-0 d-flex justify-content-center">
+          <img src="img/proj 3 1.jpg" class="w-100 shadow-1-strong rounded image-animate d-block" />
+        </div>
+
+      </div>
+    </div>
+    <!--============ gallery end ========-->
+    </div>
+    </div>
+    <hr class="mt-5 mb-5">
   </section>
-  </div>
+  <!-- Project 2 - Bootstrap Brain Component -->
+  <section class="bg-light py-5 py-xl-8">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+          <p id="section2" class="text-secondary mb-5 text-center lead fs-5" style="font-size: 14px;">
+            ශ්‍රී ලංකාවේ විශිෂ්ටතම පුහුණු ආයතනය දකුණෙන් ..MDTI අපි 👊
+            <br>පුහුණු වැඩසටහන - සන්නිවේදනය සහ මාධ්‍ය අධ්‍යයනය පිළිබඳ ගුරු ධාරිතා සංවර්ධනය පුහුණු වැඩසටහන
+            <br>දිනය - 2024/07/11, 12
+            <br>සම්පත්දායකත්වය - ආචාර්ය සේනානි හරිස්චන්ද්‍ර මහතා (ජ්‍යෙෂ්ඨ කථිකාචාර්ය )
+            <br>විජයානන්ද රූපසිංහ මහතා (ජ්‍යෙෂ්ඨ කථිකාචාර්ය )
+            <br>ධම්මික බණ්ඩාර දිසානායක මහතා(ජ්‍යෙෂ්ඨ කථිකාචාර්ය
+          </p>
+          <hr class="w-50 mx-auto mb-2 mb-xl-9 border-dark-subtle">
+        </div>
+      </div>
+    </div>
+    <!-- =========== gallery start =======-->
+    <div class="container d-flex justify-content-center">
+      <div class="row">
+        <!-- column 1 -->
+        <div class="col-lg-4 col-md-12 mb-lg-0">
+          <img src="img/proj2.1.jpg" class="w-100 shadow-1-strong rounded image-animate d-block" />
+        </div>
+        <!-- column 2 -->
+        <div class="col-lg-4 mb-lg-0">
+          <img src="img/proj2.2.jpg" class="w-100 shadow-1-strong rounded image-animate d-block" />
+        </div>
+        <!-- column 3 -->
+        <div class="col-lg-4 mb-lg-0">
+          <img src="img/proj2.3.jpg" class="w-100 shadow-1-strong rounded image-animate d-block" />
+        </div>
+      </div>
+    </div>
+
+    <!--============ gallery end ========-->
+
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
   <footer class="text-center text-lg-start text-white" style="background-color: rgb(39, 39, 39)">
     <!-- Grid container -->
     <div class="container p-4 pb-0 r">
@@ -366,6 +361,30 @@
 <script src="assets/aos-master/dist/aos.js"></script>
 <script>
   AOS.init();
+
+  window.addEventListener("load", function () {
+    document.querySelector(".loader").classList.add("hidden")
+  })
+
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.location.hash) {
+      const elemnt = document.querySelector(window.location.hash)
+      if (elemnt) {
+        elemnt.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  })
+</script>
+<script>
+  const btnScrollToTop = document.querySelector("#btnScrollToTop")
+
+  btnScrollToTop.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  })
 </script>
 
 </html>

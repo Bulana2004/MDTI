@@ -9,10 +9,6 @@
     <title>MDTI SP</title>
     <!--====Fav icon====-->
     <link rel="icon" href="img/favicon-32x32.png" sizes="32x32" type="image/png" />
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <!--====Css link====-->
     <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="styles.css" />
@@ -25,6 +21,9 @@
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <!--====Bootstrap Icons====-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <!--====Google Fonts====-->
@@ -35,11 +34,47 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/blogs/blog-5/assets/css/blog-5.css"      />
     <!--===================================================
-      Devolped by=Collage of Technology Galle (Batch 03)
-      =======================================================-->
+    Devolped by=Collage of Technology Galle (Batch 03)
+    =======================================================-->
+
+    <style>
+        /*AboutUs Banner CSS*/
+        #banner {
+            position: relative;
+            width: 100%;
+            height: 30vh;
+            background-color: rgb(50, 190, 245);
+            background-size: cover;
+            background-position: 69%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        #banner-content {
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #banner p {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 3px 3px 5px black;
+        }
+    </style>
+
 </head>
 
 <body>
+    <!-- Pre loader -->
+    <div class="loader">
+        <img src="img/1484.gif" alt="loader">
+    </div>
+    <!-- End of pre loader -->
+
     <!--====Header====-->
     <div class="header_color">
         <div class="header_fonts mx-2 text-end" id="header-info">
@@ -89,66 +124,73 @@
     <!--====Navbar-start====-->
     <nav class="navbar navbar-expand-lg navbar_bg sticky-top">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" alt="..." width="150px" />
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav nav-underline text-center">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html" style="font-size: 17px">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="courses.html" style="font-size: 17px">Courses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="Facilities.html" style="font-size: 17px">Facilities</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="download.html" style="font-size: 17px">Download</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html" style="font-size: 17px">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html" style="font-size: 17px">Contact Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false" style="font-size: 17px">
-                  About Us
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="..." width="150px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav nav-underline text-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="controlboard.html" style="font-size: 17px">Control board</a>
+                        <a class="nav-link" aria-current="page" href="index.html" style="font-size: 17px">Home</a>
                     </li>
-                  <li>
-                    <a class="dropdown-item" href="aboutUs.html" style="font-size: 17px">About Us</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="staff.html" style="font-size: 17px">Our Staff</a>
-                  </li>
-                  <li></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="courses.html" style="font-size: 17px">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="Facilities.html" style="font-size: 17px">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="download.html" style="font-size: 17px">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html" style="font-size: 17px">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="font-size: 17px">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 17px">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="nav-item">
+                                <a class="nav-link text-center " href="controlboard.html" style="font-size: 17px">Control
+                                    board</a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-center" href="aboutUs.html" style="font-size: 17px">About Us</a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-center disabled" href="staff.html" style="font-size: 17px">Our Staff</a>
+                            </li>
+                            <li><a class="nav-link text-center" href="coordinator.html" style="font-size: 17px">Coordinator</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" style="font-size: 17px">Log in</a>
+                    </li>
+
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html" style="font-size: 17px">Log in</a>
-              </li>
-             
-            </ul>
-          </div>
+            </div>
         </div>
-      </nav>
+    </nav>
     <!--====Navbar-end====-->
 
+    <div id="banner">
+        <div id="banner-content">
+            <p class="focus-in-expand-fwd">Courses</p>
+        </div>
+    </div>
+
     <!-- Categories Start -->
-    <div class="container-xxl py-5 category">
+    <div class="container-xxl py-5 category" data-aos="fade-up">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h1 class="mb-5">Courses Categories</h1>
+                <h2 class="mb-5" style="color: black;">Courses Categories</h2>
             </div>
             <div class="row g-3">
                 <div class="col-lg-7 col-md-6">
@@ -158,8 +200,8 @@
                                 <img class="img-fluid" src="img/cat-1.jpg" alt="">
                                 <div class="text-center position-absolute bottom-0 end-0 py-2 px-3"
                                     style="margin: 1px;background-color: rgba(0, 0, 0, 0.5);">
-                                    <h5 class="m-0 text-light">Web Design</h5>
-                                    <small class="text-primary">49 Courses</small>
+                                    <h5 class="m-0 text-light">"Diverse and comprehensive courses!"
+                                    </h5>
                                 </div>
                             </a>
                         </div>
@@ -168,8 +210,8 @@
                                 <img class="img-fluid" src="img/cat-2.jpg" alt="">
                                 <div class="text-center position-absolute bottom-0 end-0 py-2 px-3"
                                     style="margin: 1px;background-color: rgba(0, 0, 0, 0.5);">
-                                    <h5 class="m-0 text-light">Graphic Desighn</h5>
-                                    <small class="text-primary">49 Courses</small>
+                                    <h5 class="m-0 text-light">"Easy to find the perfect course."
+                                    </h5>
                                 </div>
                             </a>
                         </div>
@@ -178,8 +220,8 @@
                                 <img class="img-fluid" src="img/cat-3.jpg" alt="">
                                 <div class="text-center position-absolute bottom-0 end-0 py-2 px-3"
                                     style="margin: 1px;background-color: rgba(0, 0, 0, 0.5);">
-                                    <h5 class="m-0 text-light">Video Editing</h5>
-                                    <small class="text-primary">49 Courses</small>
+                                    <h5 class="m-0 text-light">"Up-to-date and detailed info."
+                                    </h5>
                                 </div>
                             </a>
                         </div>
@@ -189,11 +231,11 @@
                     <a class="position-relative d-block h-100 overflow-hidden" href="">
                         <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt=""
                             style="object-fit: cover;">
-                            <div class="text-center position-absolute bottom-0 end-0 py-2 px-3"
-                                style="margin: 1px;background-color: rgba(0, 0, 0, 0.5);">
-                                <h5 class="m-0 text-light">Online Markating</h5>
-                                <small class="text-primary">49 Courses</small>
-                            </div>
+                        <div class="text-center position-absolute bottom-0 end-0 py-2 px-3"
+                            style="margin: 1px;background-color: rgba(0, 0, 0, 0.5);">
+                            <h5 class="m-0 text-light">"Great selection to enhance skills."
+                            </h5>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -201,117 +243,73 @@
     </div>
     <!-- Categories Start -->
 
+    <!-- According -->
+    <div class="container">
+        <div class="text-center">
+            <h2 class="mb-5" style="color: black;">Course Details</h2>
+        </div>
 
-    <!-- Courses Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h1 class="mb-5">Popular Courses</h1>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-1.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
-                                    style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3"
-                                    style="border-radius: 0 30px 30px 0;">Join Now</a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30
-                                Students</small>
-                        </div>
+        <div class="accordion accordion-flush mb-5 border-dark" id="accordionFlushExample">
+            <div class="accordion-item">
+
+                <!-- thard -->
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed border rounded-3 border-dark" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                        aria-controls="flush-collapseOne" id="pdf-button">
+                        <b>2024 අගෝස්තු මස පැවැත්වීමට නියමිත පුහුණු වැඩසටහන්.</b>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <!-- <img src="Download/Augest/cours.jpeg" alt="caouses" width="100%"> -->
+                        <img src="Download/Augest/coures3.jpeg" alt="caouses" width="100%">
+                        <!--<img src="Download/Jule/ජුනි මස පුනුණු වැඩසටහන්_page-0003.jpg" alt="caouses" width="100%"> -->
+                        <a href="Download/Augest/pdf/Augest.pdf" class="float-end but" 
+                            target="_blank">Download as
+                            pdf</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-2.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
-                                    style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3"
-                                    style="border-radius: 0 30px 30px 0;">Join Now</a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30
-                                Students</small>
-                        </div>
+                <!-- first -->
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed border rounded-3 border-dark" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                        aria-controls="flush-collapseTwo" id="pdf-button">
+                        <b>2024 ජුලි මස පැවැත්වීමට නියමිත පුහුණු වැඩසටහන්.</b>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <!-- <img src="Download/Jule/ජුනි මස පුනුණු වැඩසටහන්_page-0001.jpg" alt="caouses" width="100%">
+                        <img src="Download/Jule/ජුනි මස පුනුණු වැඩසටහන්_page-0002.jpg" alt="caouses" width="100%">
+                        <img src="Download/Jule/ජුනි මස පුනුණු වැඩසටහන්_page-0003.jpg" alt="caouses" width="100%"> -->
+                        <a href="Download/Jule/pdf/ජුනි මස පුනුණු වැඩසටහන්.pdf" class="float-end"
+                            target="_blank">Download as
+                            pdf</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="course-item bg-light">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/course-3.jpg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
-                                    style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3"
-                                    style="border-radius: 0 30px 30px 0;">Join Now</a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4 pb-0">
-                            <h3 class="mb-0">$149.00</h3>
-                            <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small>(123)</small>
-                            </div>
-                            <h5 class="mb-4">Web Design & Development Course for Beginners</h5>
-                        </div>
-                        <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-user-tie text-primary me-2"></i>John Doe</small>
-                            <small class="flex-fill text-center border-end py-2"><i
-                                    class="fa fa-clock text-primary me-2"></i>1.49 Hrs</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>30
-                                Students</small>
-                        </div>
+                <!-- Second -->
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed border rounded-3 border-dark" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                        aria-controls="flush-collapseThree" id="pdf-button">
+                        <b>2024 ජුනි මස පැවැත්වීමට නියමිත පුහුණු වැඩසටහන්.</b>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <img src="Download/June/course1.jpeg" alt="caouses" width="100%">
+                        <img src="Download/June/course2.jpeg" alt="caouses" width="100%">
+                        <!-- <img src="Download/ජුනි මස පුනුණු වැඩසටහන්_page-0003.jpg" alt="caouses" width="100%"> -->
+                        <a href="Download/pdf/june coures.pdf" class="float-end" target="_blank">Download as
+                            pdf</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Courses End -->
+    <!-- End of according -->
 
     <!--====Footer-start====-->
     <footer class="text-center text-lg-start text-white" style="background-color: rgb(39, 39, 39)">
@@ -389,6 +387,10 @@
         <!-- Copyright -->
     </footer>
     <!--====Footer-End====-->
+
+    <div id="btnScrollToTop">
+        <i class="bi bi-arrow-up"></i>
+    </div>
 </body>
 
 <!--=====Js files====-->
@@ -402,8 +404,31 @@
 <script src="lib/easing/easing.min.js"></script>
 <script src="lib/waypoints/waypoints.min.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="CSS/js/main.js"></script>
 <script>
     AOS.init();
+</script>
+<script>
+    $(document).ready(function () {
+        $('#pdf-button').on('click', function () {
+            PDFObject.embed('path/to/your.pdf', "#pdf-viewer");
+            $('#pdf-download').attr('href', 'path/to/your.pdf');
+        });
+    });
+
+    window.addEventListener("load", function () {
+        document.querySelector(".loader").classList.add("hidden")
+    })
+
+    const btnscrollToTop = document.querySelector("#btnScrollToTop")
+
+    btnscrollToTop.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        })
+    })
 </script>
 
 </html>

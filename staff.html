@@ -17,6 +17,12 @@
   <link rel="stylesheet" href="assets/aos-master/dist/aos.css" />
   <link rel="stylesheet" href="counter/nicepage.css" />
   <link rel="stylesheet" href="counter/Page-1.css" />
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
   <!--====Bootstrap Icons====-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <!--====Google Fonts====-->
@@ -31,7 +37,7 @@
       position: relative;
       width: 100%;
       height: 30vh;
-      background-color: rgb(55, 154, 193);
+      background-color: rgb(50, 190, 245);
       background-size: cover;
       background-position: 69%;
       display: flex;
@@ -59,6 +65,13 @@
 </head>
 
 <body>
+  <div class="loader">
+    <img src="img/1484.gif" alt="Loader....">
+  </div>
+
+  <div id="btnScrollToTop">
+    <i class="bi bi-arrow-up"></i>
+</div>
   <!--====Header====-->
   <div class="header_color">
     <div class="header_fonts mx-2 text-end" id="header-info">
@@ -142,21 +155,22 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li class="nav-item">
-                <a class="nav-link" href="controlboard.html" style="font-size: 17px">Control board</a>
+                <a class="nav-link text-center disabled" href="controlboard.html" style="font-size: 17px">Control
+                  board</a>
               </li>
               <li>
-                <a class="dropdown-item" href="aboutUs.html" style="font-size: 17px">About Us</a>
+                <a class="nav-link text-center" href="aboutUs.html" style="font-size: 17px">About Us</a>
               </li>
               <li>
-                <a class="dropdown-item active" href="staff.html" style="font-size: 17px">Our Staff</a>
+                <a class="nav-link text-center active" href="staff.html" style="font-size: 17px">Our Staff</a>
               </li>
-              <li></li>
+              <li><a class="nav-link text-center" href="coordinator.html" style="font-size: 17px">Coordinator</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login.html" style="font-size: 17px">Log in</a>
           </li>
-          
+
         </ul>
       </div>
     </div>
@@ -388,6 +402,23 @@
 <script src="assets/aos-master/dist/aos.js"></script>
 <script>
   AOS.init();
+
+  window.addEventListener("load", function () {
+    document.querySelector(".loader").classList.add("hidden")
+  });
 </script>
 
+<script>
+  AOS.init();
+
+  const btnScrollToTop = document.querySelector("#btnScrollToTop")
+
+  btnScrollToTop.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  })
+</script>
 </html>
